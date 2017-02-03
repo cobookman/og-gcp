@@ -1,0 +1,29 @@
+<nav>
+  {{if .Site.Params.Logo }}
+  <div class="site-logo">
+    <a href="/">
+      <img src="{{ .Site.BaseURL }}{{ .Site.Params.Logo }}" title="{{ .Site.Title }}" />
+    </a>
+  </div>
+  {{ end }}
+  <div class="site-title">
+    <a href="/">{{ .Site.Title }}</a>
+  </div>
+  <div class="site-search">
+    TODO(bookman): Implement this
+  </div>
+  <div class="site-nav-items">
+    <ul>
+      {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+      <li>
+        <a href="/#{{ $key }}">{{humanize $key}}</a>
+        <ul>
+          {{ range $taxonomy.Pages }}
+          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,18 @@
+<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+  <button class="close" role="button" on="tap:sidebar.close">×</button>
+  <h4><a href="/">Home</a></h4>
+  <amp-accordion>
+    {{ range .Site.Menus.main }}
+        <section>
+          <h4>{{ .Pre }}<span>{{ .Name }}</span></h4>
+          <div>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+            </ul>
+          </div>
+        </section>
+    {{ end }}
+  </amp-accordion>
+</amp-sidebar>
+

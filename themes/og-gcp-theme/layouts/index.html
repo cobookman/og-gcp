@@ -1,0 +1,46 @@
+{{ partial "header.html" . }}
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+  <div class="article-banner">
+    <h1 itemprop="name">{{ .Site.Params.LongTitle }}</h1>
+  </div>
+  <div class="article-metadata">
+    <ul>
+      <li><a href="/">VIEW SOURCE</a></li>
+      <li><a href="/">EDIT THIS PAGE</a></li>
+      <li><a href="/">SEND FEEDBACK</a></li>
+      <li>
+        <span>Updated</span>
+        <time datetime="{{ $.Date }}" itemprop="datePublished">
+          {{ .Date.Format .Site.Params.date_format }}
+        </time>
+      </li>
+    </ul>
+  </div>
+  <div class="article-content">
+
+<h1>{{ .Site.Title }}</h1>
+{{ range (where .Site.Pages "Section" "homepage") }}
+<section id="{{ .Title }}">
+  <h2>{{ .Title }}</h2>
+  {{.Content}}
+</section>
+{{ end }}
+
+{{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+<section id="{{ $key }}" class="taxonomy-article-list">
+  <h2>{{humanize $key}}</h2>
+  {{ range $taxonomy.Pages }}
+  <div class="article-summary">
+    <a href="{{ .Permalink }}">
+      <h4>{{ .Title }}</h4>
+      <p>{{ .Summary }}</p>
+    </a>
+  </div>
+  {{ end }}
+</section>
+{{ end }}
+
+</div>
+</article>
+{{ partial "footer.html" . }}

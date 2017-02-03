@@ -1,0 +1,37 @@
+title = "GCP Open Guide"
+baseURL = "http://og-gcp.firebase.com/"
+theme = "og-gcp-theme"
+
+[params]
+	# Date format (refer to Go's date format)
+	# Examples, "Mon, Jan 2, 2006" or "2006-01--2"
+	date_format = "2006-01-02"
+	logo = "images/logo.png"
+	longTitle = "Google Cloud Platform Open Guide"
+
+[taxonomies]
+	category = "categories"
+
+[[menu.main]]
+	name = "Compute"
+	weight = -110
+	identifier = "compute"
+	url = "categories/compute/"
+
+[[menu.main]]
+	name = "Storage and Databases"
+	weight = -100
+	identifier = "storage_and_databases"
+	url = "categories/storage_and_databases/"
+
+[[menu.main]]
+	name = "Machine Learning"
+	weight = -90
+	identifier = "machine-learning"
+	url = "categories/machine-learning/"
+
+[[menu.main]]
+	name = "Administration"
+	weight = -80
+	identifier = "administration"
+	url = "categories/administration/"

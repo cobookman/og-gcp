@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides on Google Cloud Platform Open Guide</title>
+    <link>http://og-gcp.firebase.com/guide/index.xml</link>
+    <description>Recent content in Guides on Google Cloud Platform Open Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 31 Jan 2017 08:31:12 -0800</lastBuildDate>
+    <atom:link href="http://og-gcp.firebase.com/guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Machine Learning (ml)</title>
+      <link>http://og-gcp.firebase.com/guide/machine_learning/</link>
+      <pubDate>Tue, 31 Jan 2017 08:31:12 -0800</pubDate>
+      
+      <guid>http://og-gcp.firebase.com/guide/machine_learning/</guid>
+      <description>&lt;p&gt;is a cool technology!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>http://og-gcp.firebase.com/guide/networking/</link>
+      <pubDate>Tue, 31 Jan 2017 08:31:12 -0800</pubDate>
+      
+      <guid>http://og-gcp.firebase.com/guide/networking/</guid>
+      <description>&lt;p&gt;I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed
+analysis on how good companies became great.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
