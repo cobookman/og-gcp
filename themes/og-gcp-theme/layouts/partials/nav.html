@@ -1,17 +1,26 @@
-<nav>
+<a href="#" class="side-menu-toggle">menu</a>
+<nav class="side-menu">
   {{if .Site.Params.Logo }}
   <div class="site-logo">
     <a href="/">
-      <img src="{{ .Site.BaseURL }}{{ .Site.Params.Logo }}" title="{{ .Site.Title }}" />
+      <amp-img
+        src="{{ .Site.BaseURL }}{{ .Site.Params.Logo.Src }}"
+        title="{{ .Site.Title }}"
+        layout="responsive"
+        width="{{ .Site.Params.Logo.Width }}"
+        height="{{ .Site.Params.Logo.Height }}"/>
     </a>
   </div>
   {{ end }}
+
   <div class="site-title">
     <a href="/">{{ .Site.Title }}</a>
   </div>
+
   <div class="site-search">
     TODO(bookman): Implement this
   </div>
+
   <div class="site-nav-items">
     <ul>
       {{ range $key, $taxonomy := .Site.Taxonomies.categories }}

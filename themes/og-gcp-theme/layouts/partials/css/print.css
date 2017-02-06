@@ -1,0 +1,18 @@
+@media print {
+  .side-menu-toggle,
+  .side-menu {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  article .article-metadata a {
+    display: none;
+  }
+
+  article .article-metadata ul li+li:before {
+    display: none;
+  }
+}

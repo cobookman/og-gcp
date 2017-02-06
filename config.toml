@@ -6,8 +6,12 @@ theme = "og-gcp-theme"
 	# Date format (refer to Go's date format)
 	# Examples, "Mon, Jan 2, 2006" or "2006-01--2"
 	date_format = "2006-01-02"
-	logo = "images/logo.png"
 	longTitle = "Google Cloud Platform Open Guide"
+
+[params.logo]
+	src = "images/logo.png"
+	width = "209px"
+	height = "209px"
 
 [taxonomies]
 	category = "categories"

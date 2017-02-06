@@ -34,7 +34,11 @@ a {
   color: #0097a7;
 }
 
-nav {
+.side-menu-toggle {
+  display: none;
+}
+
+.side-menu {
   height: 100%;
   position: fixed;
   display: flex;
@@ -48,14 +52,14 @@ nav {
   top: 0;
 }
 
-nav .site-logo,
-nav .site-title,
-nav .site-search,
-nav .site-nav-items {
+.side-menu .site-logo,
+.side-menu .site-title,
+.side-menu .site-search,
+.side-menu .site-nav-items {
   padding: 6px 15px;
 }
 
-nav .site-logo a {
+.side-menu .site-logo a {
   display: block;
   width: 100%;
   padding: 0;
@@ -64,11 +68,7 @@ nav .site-logo a {
   text-align: center;
 }
 
-nav .site-logo img {
-  max-height: 100px;
-}
-
-nav .site-title a {
+.side-menu .site-title a {
   font-size: 25px;
   color: #616161;
   line-height: 1.3;
@@ -77,11 +77,11 @@ nav .site-title a {
   font-weight: 200;
 }
 
-nav .site-search {
+.side-menu .site-search {
   border-bottom: 1px solid #e0e0e0;
 }
 
-nav .site-nav-items {
+.side-menu .site-nav-items {
   flex: 1;
   -webkit-flex: 1;
   height: 100%;
@@ -90,7 +90,7 @@ nav .site-nav-items {
   margin-top: 2px;
 }
 
-nav .site-nav-items ul {
+.side-menu .site-nav-items ul {
   list-style: none;
   display: block;
   padding: 0;
@@ -98,18 +98,18 @@ nav .site-nav-items ul {
   line-height: 1.6;
 }
 
-nav .site-nav-items ul a {
+.side-menu .site-nav-items ul a {
   color: #424242;
   display: block;
 }
 
-nav .site-nav-items li a:focus,
-nav .site-nav-items li a:hover,
-nav .site-nav-items li a:active {
+.side-menu .site-nav-items li a:focus,
+.side-menu .site-nav-items li a:hover,
+.side-menu .site-nav-items li a:active {
   background: #eceff1;
 }
 
-nav .site-nav-items > ul {
+.side-menu .site-nav-items > ul {
   margin-bottom: 15px;
   display: block;
   padding: 0;
@@ -117,7 +117,7 @@ nav .site-nav-items > ul {
 }
 
 /** Category itself **/
-nav .site-nav-items > ul > li > a {
+.side-menu .site-nav-items > ul > li > a {
   color: black;
   font-weight: 400;
   padding-top: 8px;
@@ -125,18 +125,17 @@ nav .site-nav-items > ul > li > a {
 }
 
 /** Content in a category **/
-nav .site-nav-items > ul > li > ul {
+.side-menu .site-nav-items > ul > li > ul {
   padding-top: 3px;
 }
 
-nav .site-nav-items > ul > li > ul > li > a {
+.side-menu .site-nav-items > ul > li > ul > li > a {
   margin-top: 3px;
   font-weight: 300;
   padding-left: 15px;
 }
 
 main {
-  min-width: 500px;
   margin-left: 240px;
   display: block;
   min-height: 100%;
@@ -190,5 +189,3 @@ article .article-content {
     margin: 14px 48px 14px 48px;
     padding: 0;
 }
-
-
