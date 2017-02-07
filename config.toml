@@ -1,5 +1,5 @@
 title = "GCP Open Guide"
-baseURL = "https://og-gcp.firebase.com/"
+baseURL = "https://og-gcp.firebaseapp.com/"
 theme = "og-gcp-theme"
 
 [params]
@@ -7,9 +7,7 @@ theme = "og-gcp-theme"
 	# Examples, "Mon, Jan 2, 2006" or "2006-01--2"
 	date_format = "2006-01-02"
 	longTitle = "Google Cloud Platform Open Guide"
-	sourceLink = "github.com/cobookman/og-gcp/blob/master/"
-	sourceEdit = "github.com/cobookman/og-gcp/edit/master/"
-	sourceIssue = "github.com/cobookman/og-gcp/issues/new"
+	github = "github.com/cobookman/og-gcp"
 
 [params.logo]
 	src = "images/logo.png"

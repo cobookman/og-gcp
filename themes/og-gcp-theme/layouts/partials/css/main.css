@@ -8,7 +8,7 @@ body, html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 16px;
   color: #212121;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5em;
@@ -190,3 +190,10 @@ article .article-content {
     padding: 0;
     max-width: 700px;
 }
+
+article .article-content h1 {
+  border-bottom: 1px solid #212121;
+  padding-bottom: 0.4em;
+  font-size: 1.8em;
+}
+
