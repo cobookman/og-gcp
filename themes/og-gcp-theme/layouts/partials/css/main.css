@@ -188,4 +188,5 @@ article .article-metadata ul > li a {
 article .article-content {
     margin: 14px 48px 14px 48px;
     padding: 0;
+    max-width: 700px;
 }
