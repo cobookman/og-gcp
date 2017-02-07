@@ -6,9 +6,33 @@
   </div>
   <div class="article-metadata">
     <ul>
-      <li><a href="/">VIEW SOURCE</a></li>
-      <li><a href="/">EDIT THIS PAGE</a></li>
-      <li><a href="/">SEND FEEDBACK</a></li>
+      <li>
+      {{ if .Site.Params.SourceLink }}
+        <a
+          href="https://{{ .Site.Params.SourceLink }}content/{{ .File.Path }}"
+          target="_blank">
+          VIEW SOURCE
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Site.Params.SourceEdit }}
+      <li>
+        <a
+          href="https://{{ .Site.Params.SourceEdit }}content/{{ .File.Path }}"
+          target="_blank">
+          EDIT THIS PAGE
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Site.Params.SourceIssue }}
+      <li>
+        <a
+          href="https://{{ .Site.Params.SourceIssue }}?title={{ "Feedback Reqeust " | urlize}}&body={{ .Permalink | urlize }}"
+          target="_blank">
+          SEND FEEDBACK
+        </a>
+      </li>
+      {{ end }}
       <li>
         <span>Updated</span>
         <time datetime="{{ $.Date }}" itemprop="datePublished">
@@ -18,6 +42,7 @@
     </ul>
   </div>
   <div class="article-content" itemprop="articleBody">
+    {{ .TableOfContents }}
     {{ .Content }}
   </div>
 </article>

@@ -4,7 +4,7 @@
   <div class="site-logo">
     <a href="/">
       <amp-img
-        src="{{ .Site.BaseURL }}{{ .Site.Params.Logo.Src }}"
+        src="/{{ .Site.Params.Logo.Src }}"
         title="{{ .Site.Title }}"
         layout="responsive"
         width="{{ .Site.Params.Logo.Width }}"
@@ -28,7 +28,7 @@
         <a href="/#{{ $key }}">{{humanize $key}}</a>
         <ul>
           {{ range $taxonomy.Pages }}
-          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          <li><a href="{{ .URL }}">{{ .LinkTitle }}</a></li>
           {{ end }}
         </ul>
       </li>
