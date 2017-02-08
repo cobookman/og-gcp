@@ -12,7 +12,7 @@
       <li>
         <span class="time-text">Updated</span>
         <time datetime="{{ $.Date }}" itemprop="datePublished">
-          {{ .Date.Format .Site.Params.date_format }}
+          {{ .Site.LastChange.Format .Site.Params.date_format }}
         </time>
       </li>
     </ul>
