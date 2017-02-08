@@ -7,6 +7,11 @@ date = "2017-01-31T08:31:12-08:00"
 categories = ["Networking"]
 +++
 
+Google's private global fiber network provides fast communication
+between compute resources and clients. This doc provides an
+overview of GCPs networking products.
+<!--more-->
+
 # Network Throughput [[1]](#references)
 
 Outbound or egress traffic from a virtual machine is subject to maximum network egress throughput caps. These caps are dependent on the number of cores that a virtual machine instance has. 
