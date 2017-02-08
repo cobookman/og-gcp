@@ -1,7 +1,15 @@
-<amp-image
-  {{ with .src }}src="{{.}}"{{end}}
-  {{ with .alt }}alt="{{.}}"{{end}}
-  {{ with .height }}height="{{.}}"{{end}}
-  {{ with .width }}width="{{.}}"{{end}}
-  {{ with .layout}}layout="{{.layout}}"{{else}}layout="responsive"{{end}}
-  ></amp-image>
+{{ if .Params.Link }}
+<a href="{{ .Params.src }}" class="image-link">
+{{ end }}
+
+<amp-img
+  {{ with .Params.src }}src="{{.}}"{{end}}
+  {{ with .Params.alt }}alt="{{.}}"{{end}}
+  {{ with .Params.height }}height="{{.}}"{{end}}
+  {{ with .Params.width }}width="{{.}}"{{end}}
+  {{ with .Params.layout }}layout="{{.}}"{{else}}layout="responsive"{{end}}
+  ></amp-img>
+
+{{ if .Params.Link }}
+</a>
+{{ end }}
