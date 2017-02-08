@@ -1,7 +1,6 @@
 +++
 title = "Compute Engine (GCE)"
 draft = false
-date = "2017-02-06T16:05:56-08:00"
 categories = ["Compute"]
 
 [owner]
