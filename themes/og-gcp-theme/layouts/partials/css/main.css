@@ -8,10 +8,10 @@ body, html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 15px;
   color: #212121;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.5em;
+  line-height: 1.5;
   display: block;
 }
 
@@ -22,6 +22,11 @@ body {
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  display: block;
   clear: both;
   margin-top: 1.2em;
   margin-bottom: 0.5em;
@@ -33,6 +38,26 @@ a {
   text-decoration: none;
   color: #0097a7;
 }
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.large-screen {
+  display: block;
+}
+
+.small-screen {
+  display: none;
+}
+
 
 .side-menu-toggle {
   display: none;
@@ -75,6 +100,11 @@ a {
   text-rendering: optimizeLegibility;
   text-align: center;
   font-weight: 200;
+}
+
+.side-menu .site-search input {
+  width: 100%;
+  margin: 8px 0px;
 }
 
 .side-menu .site-search {
@@ -186,14 +216,75 @@ article .article-metadata ul > li a {
 
 
 article .article-content {
-    margin: 14px 48px 14px 48px;
-    padding: 0;
-    max-width: 700px;
+  margin: 14px 48px 14px 48px;
+  padding: 0;
+  max-width: 700px;
+  font-weight: 400;
+}
+
+article .article-content #TableOfContents {
+  font-weight: 200;
 }
 
 article .article-content h1 {
   border-bottom: 1px solid #212121;
   padding-bottom: 0.4em;
   font-size: 1.8em;
+}
+
+article .article-content h2 {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding-bottom: 12px;
+}
+
+article .article-content p {
+  margin: 0;
+  padding: 0;
+}
+
+article .article-content h1 a,
+article .article-content h2 a,
+article .article-content h3 a,
+article .article-content h4 a,
+article .article-content h5 a {
+  color: #212121;
+}
+
+.responsive-table {
+  overflow-x: auto;
+}
+
+.responsive-table table {
+  border-collapse: collapse;
+  border: none;
+}
+
+.responsive-table table thead {
+  border-bottom: 1px solid #d0d0d0;
+  font-weight: 500;
+}
+
+.responsive-table table td,
+.responsive-table table th {
+  min-width: 10em;
+  padding: 15px 5px;
+  border-radius: 2px;
+  vertical-align: middle;
+  display: table-cell;
+  border: none;
+
+}
+
+.responsive-table.bordered table > tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.responsive-table.striped table > tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.taxonomy-article-list .article-summary a h4 {
+  color: #212121;
+
 }
 

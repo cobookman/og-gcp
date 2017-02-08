@@ -8,6 +8,7 @@ theme = "og-gcp-theme"
 	date_format = "2006-01-02"
 	longTitle = "Google Cloud Platform Open Guide"
 	github = "github.com/cobookman/og-gcp"
+	CSE = "012619341396918924035:q6lvujjnodu"
 
 [params.logo]
 	src = "images/logo.png"

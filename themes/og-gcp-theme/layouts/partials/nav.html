@@ -1,38 +1,56 @@
-<a href="#" class="side-menu-toggle">menu</a>
-<nav class="side-menu">
-  {{if .Site.Params.Logo }}
-  <div class="site-logo">
-    <a href="/">
-      <amp-img
-        src="/{{ .Site.Params.Logo.Src }}"
-        title="{{ .Site.Title }}"
-        layout="responsive"
-        width="{{ .Site.Params.Logo.Width }}"
-        height="{{ .Site.Params.Logo.Height }}"/>
-    </a>
-  </div>
-  {{ end }}
+<nav class="side-menu-wrapper">
+  <a href="#" class="side-menu-toggle">menu</a>
+  <div class="side-menu">
+    {{if .Site.Params.Logo }}
+    <div class="site-logo">
+      <a href="/">
+        <amp-img
+          src="/{{ .Site.Params.Logo.Src }}"
+          title="{{ .Site.Title }}"
+          layout="responsive"
+          width="{{ .Site.Params.Logo.Width }}"
+          height="{{ .Site.Params.Logo.Height }}"/>
+      </a>
+    </div>
+    {{ end }}
 
-  <div class="site-title">
-    <a href="/">{{ .Site.Title }}</a>
-  </div>
+    <div class="site-title">
+      <a href="/">{{ .Site.Title }}</a>
+    </div>
 
-  <div class="site-search">
-    TODO(bookman): Implement this
-  </div>
+    <div class="site-search">
+      <div class="large-screen">
+          <form method="get" action="https://cse.google.com/cse/publicurl" target="_top">
+            <input type="hidden" name="cx" value="{{ .Site.Params.CSE }}">
+            <fieldset class="searchbox">
+              <input type="text" name="q" placeholder="Search Site" required>
+            </fieldset>
+          </form>
+      </div>
+      <div class="small-screen">
+        <a
+           href="https://cse.google.com/cse/publicurl?cx={{ .Site.Params.CSE }}"
+           target="_top"
+           alt="Search Site">
+          Search Site
+        </a>
+      </div>
+    </div>
 
-  <div class="site-nav-items">
-    <ul>
-      {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
-      <li>
-        <a href="/#{{ $key }}">{{humanize $key}}</a>
-        <ul>
-          {{ range $taxonomy.Pages }}
-          <li><a href="{{ .URL }}">{{ .LinkTitle }}</a></li>
-          {{ end }}
-        </ul>
-      </li>
-      {{ end }}
-    </ul>
+    <div class="site-nav-items">
+      <ul>
+        {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+        <li>
+          <a href="/#{{ $key }}">{{humanize $key}}</a>
+          <ul>
+            {{ range $taxonomy.Pages }}
+            <li><a href="{{ .URL }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
   </div>
 </nav>

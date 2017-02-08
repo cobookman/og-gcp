@@ -1,0 +1,7 @@
+<amp-image
+  {{ with .src }}src="{{.}}"{{end}}
+  {{ with .alt }}alt="{{.}}"{{end}}
+  {{ with .height }}height="{{.}}"{{end}}
+  {{ with .width }}width="{{.}}"{{end}}
+  {{ with .layout}}layout="{{.layout}}"{{else}}layout="responsive"{{end}}
+  ></amp-image>

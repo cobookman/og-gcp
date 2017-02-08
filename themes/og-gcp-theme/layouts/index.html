@@ -10,7 +10,7 @@
       <li><a href="/">EDIT THIS PAGE</a></li>
       <li><a href="/">SEND FEEDBACK</a></li>
       <li>
-        <span>Updated</span>
+        <span class="time-text">Updated</span>
         <time datetime="{{ $.Date }}" itemprop="datePublished">
           {{ .Date.Format .Site.Params.date_format }}
         </time>
@@ -21,7 +21,7 @@
 
 <h1>{{ .Site.Title }}</h1>
 {{ range (where .Site.Pages "Section" "homepage") }}
-<section id="{{ .Title }}">
+<section id="{{ .Title }}" class="homepage-section">
   <h2>{{ .Title }}</h2>
   {{.Content}}
 </section>
@@ -29,7 +29,7 @@
 
 {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
 <section id="{{ $key }}" class="taxonomy-article-list">
-  <h2>{{humanize $key}}</h2>
+  <h2 class="taxonomy-title">{{humanize $key}}</h2>
   {{ range $taxonomy.Pages }}
   <div class="article-summary">
     <a href="{{ .Permalink }}">
