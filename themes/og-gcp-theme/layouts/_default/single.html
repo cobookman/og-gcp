@@ -31,8 +31,12 @@
       {{ end }}
       <li>
         <span class="time-text">Updated</span>
-        <time datetime="{{ $.Date }}" itemprop="datePublished">
+        <time datetime="{{ if .GitInfo.AuthorDate}}{{.GitInfo.AuthorDate}}{{else}}{{ $.Date }}{{end}}" itemprop="datePublished">
+          {{ if .GitInfo.AuthorDate }}
+          {{ .GitInfo.AuthorDate.Format .Site.Params.date_format }}
+          {{ else }}
           {{ .Date.Format .Site.Params.date_format }}
+          {{ end }}
         </time>
       </li>
     </ul>
