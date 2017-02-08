@@ -151,8 +151,6 @@ Google uses software defined networking. This allows us to route a cloud client 
 
 For example assume you had a cluster of servers in the us-west1-a zone. And a user in Japan makes a request to this cluster. That customer will have their network connection be routed to Google's Network Peering Point of Presence (POP) in Tokyo. Then the request request will travel over Google's private undersea fiber line from Japan Directly to Google's data center in Oregon. Then its routed over private fiber from the Oregon datacenter directly to us-west1-a zone. This is significantly faster than traveling from japan to us-west1-a over the public internet where the request would travel through more hops and more miles of fiber.
 
-For a comparison of GCP to AWS and Azure's PoPs please refer to this [map](https://drive.google.com/a/google.com/open?id=183udiQeES5TWg1oU9PNcQoMJ418&usp=sharing) (data pulled on 1/25/17).
-
 ## Noisey Neighbor Prevention [[1]](#references)
 
 As mentioned above, for each vCPU in a VM you get 2Gibit/s of throughput to a maximum of 16Gibits/s.  Single streams are capped at around 8.5Gibit/s. These limits ensure that every VM on a host has equal bandwidth and stops VMs from monopolizing resources.
