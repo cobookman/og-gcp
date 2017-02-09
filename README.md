@@ -9,5 +9,6 @@ to submit issues, edit the markdown, or view the raw markdown file.
 
 This is not an official Google product.
 
+## Dependencies
 
-
+Must have the hugo cli, and pygments installed.
