@@ -2,6 +2,9 @@ title = "GCP Open Guide"
 baseURL = "https://og-gcp.firebaseapp.com/"
 theme = "og-gcp-theme"
 enableGitInfo = true
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+pygmentsUseClasses = false
 
 [params]
 	# Date format (refer to Go's date format)

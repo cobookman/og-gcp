@@ -51,6 +51,14 @@ input {
   border: 1px solid #e0e0e0;
 }
 
+pre {
+  display: block;
+  color: #fafafa;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  padding: 10px;
+}
 .large-screen {
   display: block;
 }
@@ -180,7 +188,7 @@ article .article-banner {
 article .article-banner h1 {
   padding: 60px 0px 30px 0px;
   margin: 0;
-  color: #fff;
+  color: #fafafa;
   font-weight: 300;
   font-size: 28px;
   text-rendering: optimizeLegibility;
@@ -241,6 +249,10 @@ article .article-content h2 {
 article .article-content p {
   margin: 0;
   padding: 0;
+}
+
+article .article-content p + p {
+  margin-top: 1em;
 }
 
 article .article-content h1 a,

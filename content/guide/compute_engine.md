@@ -40,7 +40,6 @@ all available machine types, run the following command:
 $ gcloud compute machine-types list
 ```
 
-
 ### Standard Machine
 
 Standard machine types are suitable for tasks that have a balance of CPU and
