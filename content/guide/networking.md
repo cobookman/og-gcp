@@ -59,13 +59,13 @@ The firewall rules automatically created for the `default` network are as follow
 
 An internal fully qualified domain name (FQDN) for an instance is in the format:
 
-```
+```text
 HostName.c.[PROJECT_ID].internal
 ```
 
 For example a VM with the hostname of `my-vm` in project `my-project` has the internal FQDN of:
 
-```
+```text
 my-vm.c.my-project.internal
 ```
 
@@ -114,13 +114,13 @@ For example look at the image below. Both 10.21.0.0/16 and 10.0.1.0/24 are priva
 
 **Ingress** traffic is coming **in**. This is `upload` related traffic. An example of ingress is uploading a movie to youtube.
 
-**Egress **traffic is **e**xiting. This is `download` related traffic. An example of egress is viewing a youtube video.
+**Egress** traffic is **e**xiting. This is `download` related traffic. An example of egress is viewing a youtube video.
 
 ## How it's priced [[9]](#references)
 
 GCP does **not** charge for ingress traffic, egress traffic within the same compute zone, to different GCP services in the same region, or to Google products (such-as Youtube, Maps, Drive).
 
-GCP **does **charge for egress traffic between zones and between regions.
+GCP **does** charge for egress traffic between zones and between regions.
 
 Each service has their own respective egress pricing. For reference here is [Compute Engine's](https://cloud.google.com/compute/pricing#general), [Cloud Storage's](https://cloud.google.com/storage/pricing#network-pricing), and [App Engine's](https://cloud.google.com/appengine/pricing#Billable_Resource_Unit_Costs) egress pricing.
 

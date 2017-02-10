@@ -289,7 +289,7 @@ reads and writes, the limiting factor is
 [throughput](http://en.wikipedia.org/wiki/Throughput).
 
 
-#### Maximum sustained IOPS
+#### **Maximum sustained IOPS**
 {{% table bordered striped %}}
 | Disk Type | Read IOPS Per GiB of Disk | Write IOPS per GiB of Disk | Read IOPS per Instance | Write IOPS per Instance |
 | :-------- | :-----------------------: | :------------------------: | :------------------------: | :-------------------------: |
@@ -301,7 +301,7 @@ reads and writes, the limiting factor is
 
 
 
-#### Maximum sustained Throughput (MiB/s)
+#### **Maximum sustained Throughput (MiB/s)**
 {{% table bordered striped %}}
 | Disk Type | Read throughput per GiB of disk | Write throughput per GiB of disk | Read throughput per instance | Write throughput per instance |
 | :-------- | :-----------------------------: | :------------------------------: | :--------------------------: | :---------------------------: |
@@ -331,7 +331,7 @@ instance that has no additional IP traffic.
 
 To derive the figures above. 1 VCPU gives you 2Gibit/s = 256MiB/s. Then there's
 a 3.3x data redundancy overhead, giving a maximum write I/O for one core of
-256/3.3 = ~78MiB/s of I/O.
+256 / 3.3 = ~78MiB/s of I/O.
 
 # Instance Groups [[4]](#references)
 
