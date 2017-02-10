@@ -289,7 +289,8 @@ reads and writes, the limiting factor is
 [throughput](http://en.wikipedia.org/wiki/Throughput).
 
 
-#### **Maximum sustained IOPS**
+#### Maximum sustained IOPS
+
 {{% table bordered striped %}}
 | Disk Type | Read IOPS Per GiB of Disk | Write IOPS per GiB of Disk | Read IOPS per Instance | Write IOPS per Instance |
 | :-------- | :-----------------------: | :------------------------: | :------------------------: | :-------------------------: |
@@ -301,7 +302,8 @@ reads and writes, the limiting factor is
 
 
 
-#### **Maximum sustained Throughput (MiB/s)**
+#### Maximum sustained Throughput (MiB/s)
+
 {{% table bordered striped %}}
 | Disk Type | Read throughput per GiB of disk | Write throughput per GiB of disk | Read throughput per instance | Write throughput per instance |
 | :-------- | :-----------------------------: | :------------------------------: | :--------------------------: | :---------------------------: |
