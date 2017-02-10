@@ -76,6 +76,8 @@ pre {
   padding: 10px;
   line-height: 125%;
   background: #272822;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .large-screen {

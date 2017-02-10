@@ -3,7 +3,7 @@ title = "Compute Engine (GCE)"
 draft = false
 categories = ["Compute"]
 
-[owner]
+[[owners]]
   email = "bookman@google.com"
   name = "Colin Bookman"
 +++

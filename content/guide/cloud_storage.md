@@ -3,7 +3,7 @@ draft = false
 title = "Cloud Storage (GCS)"
 categories = ["Storage and Databases"]
 
-[owner]
+[[owners]]
   email = "bookman@google.com"
   name = "Colin Bookman"
 +++

@@ -3,7 +3,7 @@ title = "Networking Overview"
 draft = false
 categories = ["Networking"]
 
-[owner]
+[[owners]]
   email = "bookman@google.com"
   name = "Colin Bookman"
 +++

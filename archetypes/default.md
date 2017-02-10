@@ -8,7 +8,7 @@ categories = [
   "Compute", "Storage and Databases", "Machine Learning", "Administration"
 ]
 
-[owner]
+[[owners]]
   name = "George P. Burdell"
   email = "burdell@gatech.edu"
 +++

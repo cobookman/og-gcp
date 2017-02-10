@@ -2,7 +2,7 @@
 title = "About"
 weight = -100
 
-[owner]
+[[owners]]
   email = "bookman@google.com"
   name = "Colin Bookman"
 +++
