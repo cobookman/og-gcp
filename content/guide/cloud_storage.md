@@ -196,42 +196,43 @@ higher per operation cost and a lower availability.
 </thead>
 <tbody>
 <tr>
-  <td>
+  <td align="center">
     <a href="Multi-Regional](https://cloud.google.com/storage/docs/storage-classes#multi-regional">
       Multi Regional
     </a>
   </td>
-  <td>
+  <td style="min-width:16em;">
     <ul>
       <li>99.95% Availability</li>
       <li>Geo-redundant</li>
     </ul>
-    <td>Storing data that is frequently access ("hot" objects) around the world, such as serving
-        website content, streaming videos, or gaming and mobile applications.
-    </td>
+  </td>
+  <td style="min-width:16em">Storing data that is frequently accessed ("hot" objects) around the
+    world, such as serving website content, streaming videos, or gaming and mobile applications.
+  </td>
 </tr>
 <tr>
-  <td>
+  <td align="center">
     <a href="https://cloud.google.com/storage/docs/storage-classes#regional">Regional Storage</a>
   </td>
-  <td>
+  <td style="min-width:16em;">
     <ul>
       <li>99.9% availability</li>
       <li>Lower cost per GB stored</li>
       <li>Data stored in a narrow geographic region</li>
     </ul>
   </td>
-  <td>Storing frequently accessed in the same region as your Google Cloud DataProc or Google 
-      Compute Engine instances that use it, such as for data analytics.
+  <td style="min-width:16em;">Storing frequently accessed in the same region as your Google Cloud
+    DataProc or Google Compute Engine instances that use it, such as for data analytics.
   </td>
 </tr>
 <tr>
-  <td>
+  <td align="center">
     <a href="https://cloud.google.com/storage/docs/storage-classes#nearline">
       Nearline Storage
     </a>
   </td>
-  <td>
+  <td style="min-width:16em;">
     <ul>
       <li>99.0% availability</li>
       <li>Very low cost per GB stored</li>
@@ -240,17 +241,17 @@ higher per operation cost and a lower availability.
       <li>30-day minimum storage duration</li>
     </ul>
   </td>
-  <td>Data you do not expect to access frequently (i.e., no more than once per month). Ideal for 
-      back-up and serving long-tail multimedia content.
+  <td style="min-width:16em;">Data you do not expect to access frequently (i.e., no more than once 
+    per month). Ideal for back-up and serving long-tail multimedia content.
   </td>
 </tr>
 <tr>
-  <td>
+  <td align="center">
     <a href="https://cloud.google.com/storage/docs/storage-classes#coldline">
       Coldline Storage
     </a>
   </td>
-  <td>
+  <td style="min-width:16em;">
     <ul>
       <li>99.0% availability</li>
       <li>Lowest cost per GB stored</li>
@@ -258,8 +259,9 @@ higher per operation cost and a lower availability.
       <li>Higher per-operation costs</li>
       <li>90-day minimum storage duration</li>
     </ul>
-  <td>Data you expect to access infrequently (i.e., no more than once per year). Typically this is 
-      for disaster recovery, or data that is archived and may or may not be needed at some future time.
+  </td>
+  <td style="min-width:16em;">Data you expect to access infrequently (i.e., no more than once per year).
+    Typically this is for disaster recovery, or data that is archived and may or may not be needed at some future time.
   </td>
 </tr>
 </tbody>
