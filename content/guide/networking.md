@@ -165,7 +165,7 @@ The GCLB will real-time scale and can go from 0 to 1 million requests per second
 
 # Related Technologies
 
-AWS VPC
+[AWS VPC](https://aws.amazon.com/vpc/)
 
 AWS DirectConnect
 
